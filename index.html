@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Temperamento</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#start">Iniciar</a>
+                <div class="mx-auto">
+                    <!-- Logo en el centro -->
+                    <div class="logo">
+                        <img src="logo.png" alt="Logo">
+                    </div>
+                </div>
+            </nav>
+            <div class="text-center my-4">
+                <h1>Test de Temperamentos</h1>
+                <h2>Mejorando a uno mismo</h2>
+                <p><strong>Salmos 3:23</strong> "Hola Mundo"</p>
+                <p>Nos estamos respaldando en base al libro:</p>
+                <p>* Biblia / Libro 1 / Libro 2 / Libro 3</p>
+            </div>
+        </header>
+        <!-- End Header -->
+        <br>
+        <!-- Main Content -->
+        <main class="text-center my-4" id="start">
+            <div class="intro">
+                <p>¿Quieres conocerte realmente?...</p>
+                <button class="btn btn-primary" onclick="startTest()">Inicia las preguntas</button>
+            </div>
+            <form id="temperamentTest" style="display: none;">
+                <div id="questionContainer"></div>
+                <button type="button" class="btn btn-secondary" id="prevButton" onclick="prevQuestion()" style="display: none;">Anterior</button>
+                <button type="button" class="btn btn-primary" id="nextButton" onclick="nextQuestion()">Siguiente</button>
+            </form>
+            <div id="result" style="display: none;"></div>
+            <div id="books" style="display: none;"></div>
+            <div id="listBook" style="display: none;"></div>
+        </main>
+        <!-- End Main Content -->
+        <br>
+        <!-- Footer -->
+        <footer class="footer mt-auto py-3 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-left">
+                        <p>Dios quiere decirte quién eres</p>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <ul class="list-inline">
+                            <li class="list-inline-item mr-2">
+                                <a href="index.html" class="text-dark">Home</a>
+                            </li>
+                            <li class="list-inline-item mr-2">
+                                <a href="data.html" class="text-dark">Info</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12 text-center mt-3">
+                        <p>&copy; 2024 CV Congregantes Puebla. Todos los derechos reservados. Desarrollado con mucho <i class="fa fa-heart text-danger"></i> por <span class="text-success">Zuriel</span></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+    </div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script1.js"></script>
+</body>
+</html>
